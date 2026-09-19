@@ -9,6 +9,6 @@ package Hilos;
  *
  * @author Ian Suazo Palao
  */
-public class EstadoDelRepartidor {
-    
+public enum EstadoDelRepartidor {
+    DISPONIBLE,CARGANDO,EN_RUTA,ENTREGANDO,REGRESANDO,FUERA_DE_SERVICIO
 }
