@@ -112,7 +112,26 @@ public class HiloRepartidor {
         }
     }
     
-    
-    
+    public String getIdRepartidor(){
+        return id; 
+    }
+    public String getNombre(){ 
+        return nombre; 
+    }
+    public int getCapacidad(){ 
+        return capacidad; 
+    }
+    public String getRutaAsignada(){ 
+        return rutaAsignada; 
+    }
+    public synchronized EstadoDelRepartidor getEstado(){
+        return estado; 
+    }
+    public synchronized int getPaquetesActuales(){
+        return paquetesCargados.getSize(); 
+    }
+    public synchronized int getEntregadosCount(){ 
+        return entregadosCount; 
+    }
     
 }
