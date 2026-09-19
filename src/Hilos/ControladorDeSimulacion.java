@@ -99,4 +99,11 @@ public class ControladorDeSimulacion {
     public synchronized double getTiempoPromedio(){
         return paquetesEntregados==0 ? 0.0:(tiempoTotalEntregas/paquetesEntregados);
     }
+    
+    public boolean estaPausado(){
+        return pausado; 
+    }
+    public boolean estaDetenido(){
+        return detenido; 
+    }
 }
