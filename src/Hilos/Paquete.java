@@ -80,7 +80,7 @@ public class Paquete {
         this.estado = estado;
     }
 
-    public void setRutAsignada(String ruta_asig) {
+    public void setRutaAsignada(String ruta_asig) {
         this.ruta_asig = ruta_asig;
     }
 
