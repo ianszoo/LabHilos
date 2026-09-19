@@ -9,7 +9,7 @@ package Hilos;
  *
  * @author Ian Suazo Palao
  */
-public class HiloClasificador{
+public class HiloClasificador extends Thread{
     
     private final String id;
     private final Logistica almacen;

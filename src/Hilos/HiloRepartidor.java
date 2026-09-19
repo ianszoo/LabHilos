@@ -9,7 +9,7 @@ import java.util.Random;
  *
  * @author Ian Suazo Palao
  */
-public class HiloRepartidor {
+public class HiloRepartidor extends Thread{
     private final String id;
     private final String nombre;
     private final int capacidad;
@@ -23,7 +23,7 @@ public class HiloRepartidor {
     private final ControladorDeSimulacion control;
     private final Random r = new Random();
 
-    public HiloRepartidor(String id, String nombre, int capacidad, String ruta, ListaEnlazadas<Paquete> paquetesCargados, Logistica expedicion, ListaEnlazadas<Paquete> listaEntregados, ListaEnlazadas<Paquete> listaDevueltos, ControladorDeSimulacion control) {
+    public HiloRepartidor(String id, String nombre, int capacidad, String ruta, Logistica expedicion, ListaEnlazadas<Paquete> listaEntregados, ListaEnlazadas<Paquete> listaDevueltos, ControladorDeSimulacion control) {
         this.id = id;
         this.nombre = nombre;
         this.capacidad = capacidad;
