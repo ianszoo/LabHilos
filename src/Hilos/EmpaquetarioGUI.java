@@ -85,7 +85,7 @@ public class EmpaquetarioGUI extends JFrame{
         p_central.add(fila2);
         
         p_rep = new JPanel(new GridLayout(1,4,6,6));
-        p_rep.setBorder(BorderFactory.createTitledBorder(BorderFactory.createEtchedBorder(), "🚚 FLOTA DE REPARTIDORES", TitledBorder.LEFT, TitledBorder.TOP, new Font("Segoe UI", Font.BOLD, 12)));
+        p_rep.setBorder(BorderFactory.createTitledBorder(BorderFactory.createEtchedBorder(), "FLOTA DE REPARTIDORES", TitledBorder.LEFT, TitledBorder.TOP, new Font("Segoe UI", Font.BOLD, 12)));
         lblRepartidorEstado = new JLabel[4];
         lblRepartidorCarga = new JLabel[4];
 
@@ -95,7 +95,7 @@ public class EmpaquetarioGUI extends JFrame{
         for (int i = 0; i < 4; i++) {
             JPanel card = new JPanel(new GridLayout(4, 1, 2, 2));
             card.setBorder(BorderFactory.createLineBorder(Color.LIGHT_GRAY));
-            JLabel lblId = new JLabel("🚚 Repartidor " + (i + 1) + " (" + rutasNombres[i] + ")", JLabel.CENTER);
+            JLabel lblId = new JLabel("Repartidor " + (i + 1) + " (" + rutasNombres[i] + ")", JLabel.CENTER);
             lblId.setFont(new Font("Segoe UI", Font.BOLD, 11));
             lblRepartidorEstado[i] = new JLabel("Estado: DISPONIBLE", JLabel.CENTER);
             lblRepartidorCarga[i] = new JLabel("Carga: 0 / " + caps[i], JLabel.CENTER);
